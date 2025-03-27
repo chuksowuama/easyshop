@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #606c38;
+  --secondary-color: #283618; /*buttoncolor */
+  --ternary-color: hsl(52, 94%, 94%);
+  --quaternary-color: #dda15e;
+  --quinary-color: #bc6c25;
+  --FontColor: #222;
+  --Titlefont-size: max(1.9rem, 1vw);
+  --SubTITLEfont-size: max(1.5rem, 1vw);
+  --Paragraphfont-size: max(1rem, 1vw);
+}
+.search-Container{
+    position: fixed;
+    padding: 1.6rem 0.7rem;
+    top: 65px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    background-color: rgba(1, 29, 10, 0.7);
+    animation: searchBox .3s ease-in-out ;
+}
+.SearchArea{
+    width: 70%;
+    margin: auto;
+    padding: 1.2rem 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    background-color: white;
+    border-radius: 20px;
+}
+.SearchArea input{
+    width: 90%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.3rem;
+    border: none;
+    outline: transparent;
+}
+
+@keyframes searchBox {
+    from{
+        top: 0;
+        opacity: 0;
+    }
+    to{
+        top: 70px;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #606c38;
+    --secondary-color: #283618; /*buttoncolor */
+    --ternary-color: hsl(52, 94%, 94%);
+    --quaternary-color: #dda15e;
+    --quinary-color: #bc6c25;
+    --FontColor: #222;
+    /* --Titlefont-size: max(1.9rem, 1vw); */
+    --SubTITLEfont-size: max(1.5rem, 1vw);
+    --Paragraphfont-size: max(1rem, 1vw);
+  }
+  
+.heroContainer {
+  position: relative;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+.wrapp {
+  display: flex;
+}
+.heroslide {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transform: translate(-100%);
+  transition: .9s ease-in-out;
+}
+.hero-active{
+    opacity: 1;
+    transform: translate(0);
+}
+.heroimg-Container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.heroimg-Container::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0,0.2);
+}
+.heroslide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%,-30%);
+  color: var(--quinary-color);
+  font-size: 2rem;
+  padding: 0 0.5rem;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+.text-1{
+    color:var(--ternary-color);
+    font-weight: 800;
+}
+#text-2{
+    color:var(--ternary-color);
+    font-weight: 800;
+}
+.heroContent h2{
+    font-size: var(--SubTITLEfont-size);
+    color: var(--ternary-color);
+}
+.heroContent button{
+    background:transparent;
+    padding: 0.5rem 0.4rem;
+    border: 1px solid var(--quaternary-color);
+    outline: transparent;
+    color: var(--ternary-color);
+    margin-top: 1.5rem;
+    width: 200px;
+    font-size: var(--Paragraphfont-size);
+    cursor: pointer;
+}
+.heroLink{
+    color: var(--ternary-color);
+    font-weight: 800;
+    text-decoration: none;
+}
+.heroContent button:hover{
+   background-color:var(--quaternary-color) ;
+}
+
+#heroProd-btn{
+    border: 1px solid var(--quinary-color);
+}
+#heroProd-btn:hover{
+    background-color: var(--quinary-color);
+}
