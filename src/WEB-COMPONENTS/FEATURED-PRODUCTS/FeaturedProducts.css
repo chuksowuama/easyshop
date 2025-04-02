@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #606c38;
+  --secondary-color: #283618; /*buttoncolor */
+  --ternary-color: hsl(52, 94%, 94%);
+  --quaternary-color: #dda15e;
+  --quinary-color: #bc6c25;
+  --FontColor: #222;
+  --Titlefont-size: clamp(16px, 1.5rem, 2rem);
+  --SubTITLEfont-size: max(1.5rem, 1vw);
+  --Paragraphfont-size: max(1rem, 1vw);
+}
+
+.featuredProducts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.featured-cardContainer {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.8rem 1.6rem;
+  padding: 1rem 0;
+}
+.featured-cards {
+  width: 100%;
+  box-shadow: 0 0 5px var(--primary-color);
+  justify-self: center;
+  align-self: center;
+  padding: 0.2rem 0.6rem;
+  background-color: var(--ternary-color);
+}
+.featured-cards .imageContainer {
+  width: 100%;
+  height: 350px;
+}
+.featured-cards .infoContainer{
+    padding: 0.6rem 0;
+    line-height: 1.5rem;
+}
+.featured-cards .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.featured-cards .infoContainer .Name-rating{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+.featured-cards .infoContainer .Name-rating h3{
+  color: var(--quinary-color);
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.featured-cards .price span{
+  font-weight: 600;
+}
+.featured-cards .Name-rating p{
+ color: gold;
+ font-weight: 600;
+}
+.featured-cards .feat-description{
+  line-height: 1.4rem;
+}
+.featured-cards button{
+    cursor: pointer;
+    width: 150px;
+    border: none;
+    padding: 0.8rem 0.5rem;
+    color: var(--ternary-color);
+    background-color: var(--quinary-color);
+}
+.featured-cards button:hover{
+    background-color: var(--quaternary-color);
+}
+
+@media screen and (max-width: 600px){
+    .featured-cardContainer {
+      grid-template-columns: 1fr; /* Switch to a single column on smaller screens */
+      width: 100%; /* Use full width */
+    }
+  }

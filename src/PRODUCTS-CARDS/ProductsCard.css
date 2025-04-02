@@ -1,0 +1,90 @@
+.products-Card {
+  width: 100%;
+  box-shadow: 0 0 5px var(--primary-color);
+  justify-self: center;
+  align-self: center;
+  padding: 0.2rem 0.6rem;
+  background-color: var(--ternary-color);
+}
+.products-Card .imageContainer {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.plusAdd{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: grey;
+  padding: 0.2rem 0.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.plusAdd i{
+  color: white;
+  font-weight: 600;
+}
+.incrementBtns{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.products-Card .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.products-Card .infoContainer {
+  padding: 0.6rem 0;
+  line-height: 1.8rem;
+}
+
+.products-Card .Name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Name-rating  h4{
+  color: var(--quinary-color);
+  font-weight: 600;
+}
+.products-Card .Name-rating h3 {
+  color: var(--quinary-color);
+  text-transform: uppercase;
+}
+.products-Card .Name-rating p {
+  color: gold;
+  font-weight: 600;
+}
+.products-Card .price span{
+  font-weight: 600;
+}
+.Prodcard-description{
+  line-height: 1.4rem;
+}
+.button{
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products-Card button {
+  cursor: pointer;
+  width: 150px;
+  border: none;
+  padding: 0.8rem 0.5rem;
+  color: var(--ternary-color);
+  background-color: var(--quinary-color);
+}
+.products-Card button:hover{
+    background-color:var(--quaternary-color);
+}

@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #606c38;
+    --secondary-color: #283618; /*buttoncolor */
+    --ternary-color: hsl(52, 94%, 94%);
+    --quaternary-color: #dda15e;
+    --quinary-color: #bc6c25;
+    --FontColor: #222;
+    --Titlefont-size: clamp(16px, 1.5rem, 2rem);
+    --SubTITLEfont-size: max(1.5rem, 1vw);
+    --Paragraphfont-size: max(1rem, 1vw);
+  }
+  
+.cateegories{
+    padding: 0 0.5rem;
+    width: 100%;
+}
+.categories-menu{
+    list-style: none;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-around;
+}
+.categories-menu li{
+    cursor: pointer;
+    padding:0.2rem 0.6rem;
+    font-weight: 600;
+    color: gray;
+    white-space: nowrap;
+}
+.cateActive{
+   color: var(--quinary-color);
+}

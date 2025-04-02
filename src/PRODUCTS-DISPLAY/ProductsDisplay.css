@@ -1,0 +1,23 @@
+.products-display{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.8rem 1.6rem;
+    padding: 1rem 1.2rem;
+}
+.prodisplay-title{
+  padding:1rem 0.5rem;
+  margin-top: 30px;
+}
+.prodisplay-title h1{
+  color: var(--quinary-color);
+}
+.prodisplay-title h3{
+  color: gray;
+}
+@media screen and (max-width: 600px){
+    .products-display{
+      grid-template-columns: 1fr; /* Switch to a single column on smaller screens */
+      width: 100%; /* Use full width */
+    }
+  }

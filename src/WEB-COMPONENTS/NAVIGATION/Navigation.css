@@ -10,7 +10,7 @@
   --Paragraphfont-size: max(1rem, 1vw);
 }
 
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,8 +21,12 @@ nav {
   width: 90vw;
   padding: 0.7rem 0.8rem;
   margin: auto;
+  background-color:transparent ;
   background-color: var(--ternary-color);
   z-index: 999;
+}
+.navbardisplay{
+  box-shadow: 0 0 5px black;
 }
 .logo {
   display: flex;

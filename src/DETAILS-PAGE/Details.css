@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #606c38;
+  --secondary-color: #283618; /*buttoncolor */
+  --ternary-color: hsl(52, 94%, 94%);
+  --quaternary-color: #dda15e;
+  --quinary-color: #bc6c25;
+  --FontColor: #222;
+  --Titlefont-size: clamp(16px, 1.5rem, 2rem);
+  --SubTITLEfont-size: max(1.5rem, 1vw);
+  --Paragraphfont-size: max(1rem, 1vw);
+}
+
+.detail-container {
+  margin-top: 90px;
+}
+.detail-container h1 {
+  text-align: start;
+  color:var(--quinary-color);
+  margin-bottom: 0.6rem;
+  padding: 0.6rem;
+}
+.content-Container {
+}
+.featured-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem 0.9rem;
+}
+.featImg-container {
+  width: 100%;
+  height: 400px;
+}
+.featImg-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.featinfo {
+  line-height: 2.5rem;
+  width: 100%;
+}
+.featinfo span {
+  color: var(--quinary-color);
+}
+.featinfo p {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+
+.featinfo button {
+  margin: 30px 0;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  background-color: var(--quinary-color);
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.featinfo button:hover {
+  background-color: var(--quaternary-color);
+}
+
+@media screen and (max-width: 600px) {
+  .featured-content {
+    grid-template-columns: 1fr;
+  }
+  .featinfo {
+    line-height: normal;
+    width: 100%;
+  }
+}

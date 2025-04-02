@@ -38,6 +38,20 @@
     border: none;
     outline: transparent;
 }
+.searchResult{
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    background-color: green;
+    z-index: 10;
+}
+.search-Container i{
+    position: absolute;
+    top:5px;
+    right: 30px;
+    padding: 10px;
+    color: white;
+}
 
 @keyframes searchBox {
     from{

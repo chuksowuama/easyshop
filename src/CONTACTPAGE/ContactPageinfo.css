@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #606c38;
+  --secondary-color: #283618; /*buttoncolor */
+  --ternary-color: hsl(52, 94%, 94%);
+  --quaternary-color: #dda15e;
+  --quinary-color: #bc6c25;
+  --FontColor: #222;
+  --Titlefont-size: clamp(16px, 1.5rem, 2rem);
+  --SubTITLEfont-size: max(1.5rem, 1vw);
+  --Paragraphfont-size: max(1rem, 1vw);
+}
+
+.Contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.2rem;
+}
+.contactInformation {
+  flex: 1;
+  line-height: 2rem;
+  padding: 0.5rem 1.2rem;
+}
+.contactInformation h1 {
+  font-size: var(--SubTITLEfont-size);
+  font-weight: 800;
+  color: var(--quinary-color);
+  padding: 0.5rem 0;
+}
+.contactInformation ul {
+  list-style: none;
+}
+.contactInformation ul li h4 {
+  font-weight: 600;
+  font-size: var(--Paragraphfont-size);
+  color: gray;
+}
+.contactInformation ul li h5 {
+  font-weight: 300;
+  font-size: var(--Paragraphfont-size);
+  color: gray;
+}
+/* contact form */
+.contactForm {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 1.3rem;
+  background-color: whitesmoke;
+}
+form h1 {
+  text-align: center;
+  font-size: var(--Titlefont-size);
+  padding-bottom: 0.5rem;
+  font-weight: 800;
+  color: gray;
+}
+input[type="text"],
+[type="email"],
+[type="tel"] {
+  width: 70%;
+  font-size: 1.1rem;
+  outline: transparent;
+}
+input[type="submit"] {
+  background-color: var(--quinary-color);
+  color: var(--ternary-color);
+  border: none;
+  outline: transparent;
+  padding: 0.4rem 2.7rem;
+}
+input[type="submit"]:hover {
+  background-color: var(--quaternary-color);
+  color: var(--ternary-color);
+  cursor: pointer;
+}
+.map {
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  padding: 1.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .Contact {
+    grid-template-columns: 1fr;
+  }
+  .contactInformation {
+    width: 100%;
+  }
+  .contactForm {
+    width: 100%;
+  }
+  .map{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+  }
+}

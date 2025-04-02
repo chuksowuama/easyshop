@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./HeroSect.css";
 import { HerosectImg } from "../../AlldataAssest";
 import { Link } from "react-router-dom";
+import Navigation from "../NAVIGATION/Navigation";
 
 const HeroSect = () => {
   const [currentslide, setCurrentslide] = useState(0);
@@ -24,7 +25,6 @@ const HeroSect = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, [currentslide, HerosectImg.length, cond]);
-  console.log(currentslide, cond);
   return (
     <>
       <div

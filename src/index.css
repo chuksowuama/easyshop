@@ -23,3 +23,11 @@
   --SubTITLEfont-size: max(1.5rem, 1vw);
   --Paragraphfont-size: max(1rem, 1vw);
 }
+
+.ProductPage{
+  margin: 100px auto;
+  width: 100%;
+}
+.ContactContainer {
+  margin: 100px auto ;
+}
